@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Cinzel", serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-display: "Cinzel", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  color: #151712;
+  background: #f7f5f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #f7f5f0;
+  color: #151712;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: #c5a880;
+  color: #090b08;
+}
+
+/* Typography Utility Classes */
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.font-display {
+  font-family: "Cinzel", serif;
+}
+
+.font-sans {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Luxury Aesthetics Utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a88448 0%, #7c5c24 50%, #b89355 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text-light {
+  background: linear-gradient(135deg, #f3e7d3 0%, #c5a880 50%, #e6d5b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #c5a880 0%, #a88b60 100%);
+}
+
+.glass-dark {
+  background: rgba(18, 21, 16, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-card-light {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card-light:hover {
+  border-color: rgba(197, 168, 128, 0.6);
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(197, 168, 128, 0.15);
+}
+
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: rotate(30deg);
+  transition: all 0.75s ease;
+}
+
+.shimmer-btn:hover::after {
+  left: 130%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b6e40;
+}
