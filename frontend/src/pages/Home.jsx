@@ -64,7 +64,7 @@ const Home = ({ onOpenEnquiry, onOpenLightbox }) => {
                 <span className="gold-gradient-text-light font-display italic">For Commercial Investment.</span>
               </h1>
 
-              <p className="mt-6 max-w-xl text-sm leading-relaxed text-white/80 sm:text-base">
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
                 9 Acres. 100+ Brands Target. One Address. <br />
                 Buy high-visibility commercial retail shops and independent showrooms in Hisar with guaranteed 9-Year Brand Lease returns.
               </p>
@@ -126,7 +126,7 @@ const Home = ({ onOpenEnquiry, onOpenLightbox }) => {
             </div>
 
             <div>
-              <p className="text-xs leading-relaxed text-[#55594f] sm:text-sm lg:text-base">
+              <p className="text-sm leading-relaxed text-[#33362d] sm:text-base lg:text-lg">
                 Connaught Place Hisar introduces a modern open-courtyard commercial design, blending open-air plazas, double-height showroom frontages, and dedicated food & entertainment zones engineered for maximum customer footfall and rental yield.
               </p>
 
@@ -215,7 +215,7 @@ const Home = ({ onOpenEnquiry, onOpenLightbox }) => {
                     <h4 className="mt-3 text-base font-bold text-[#151712]">
                       {card.title}
                     </h4>
-                    <p className="mt-2 text-xs leading-relaxed text-[#66695e]">
+                    <p className="mt-2 text-sm leading-relaxed text-[#33362d]">
                       {card.desc}
                     </p>
                   </div>
@@ -371,7 +371,7 @@ const Home = ({ onOpenEnquiry, onOpenLightbox }) => {
               <h2 className="font-cinzel mt-2 text-3xl font-bold text-[#151712] sm:text-4xl lg:text-5xl">
                 Location Advantage & Growth Corridor.
               </h2>
-              <p className="mt-4 text-xs leading-relaxed text-[#55594f] sm:text-sm">
+              <p className="mt-4 text-sm leading-relaxed text-[#33362d] sm:text-base">
                 Connaught Place Hisar sits at the heart of Sector 25, surrounded by rapid urban development, immediate highway access, and key regional hubs.
               </p>
 
@@ -501,7 +501,7 @@ const Home = ({ onOpenEnquiry, onOpenLightbox }) => {
             <h2 className="font-cinzel mt-2 text-3xl font-bold text-white sm:text-4xl">
               Buy Commercial Shop / Showroom in Hisar.
             </h2>
-            <p className="mt-2 text-xs text-white/70">
+            <p className="mt-2 text-sm text-white/85">
               Limited high-frontage retail shops and brand lease showrooms available for purchase.
             </p>
           </div>

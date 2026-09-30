@@ -48,7 +48,7 @@ const Footer = ({ onOpenEnquiry }) => {
                 <img src="/logo.jpeg" alt="Connaught Place Hisar Logo" className="h-14 w-auto max-w-[240px] object-contain" />
               </div>
             </Link>
-            <p className="mt-5 max-w-md text-xs leading-relaxed text-white/50">
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-white/75">
               A premier 9-acre commercial destination in Sector 25, Hisar. Designed around high-footfall retail, food court hubs, multiplex entertainment, and 9-year brand lease showrooms.
             </p>
 
@@ -73,8 +73,8 @@ const Footer = ({ onOpenEnquiry }) => {
 
           {/* Quick Links */}
           <div>
-            <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-[#c5a880]">Navigation</p>
-            <div className="grid gap-2.5 text-xs text-white/60">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#c5a880]">Navigation</p>
+            <div className="grid gap-2.5 text-sm text-white/70">
               <Link to="/" className="transition hover:text-[#c5a880]">Home Overview</Link>
               <Link to="/about" className="transition hover:text-[#c5a880]">Project Vision & Location</Link>
               <Link to="/leasing" className="transition hover:text-[#c5a880]">Leasing & Rate Specs</Link>
@@ -84,8 +84,8 @@ const Footer = ({ onOpenEnquiry }) => {
 
           {/* Rates Summary */}
           <div>
-            <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-[#c5a880]">Leasing Highlights</p>
-            <div className="grid gap-2 text-xs text-white/60">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#c5a880]">Leasing Highlights</p>
+            <div className="grid gap-2 text-sm text-white/75">
               <p>• Ground Floor: ₹21,000 / sq.ft.</p>
               <p>• 1st Floor: ₹19,000 / sq.ft.</p>
               <p>• 2nd Floor: ₹17,000 / sq.ft.</p>

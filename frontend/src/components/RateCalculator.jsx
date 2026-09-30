@@ -37,7 +37,7 @@ const RateCalculator = ({ onOpenEnquiry }) => {
           <h3 className="font-cinzel text-3xl font-bold tracking-tight text-[#151712] sm:text-4xl">
             Shop Sale Price & Investment Estimator
           </h3>
-          <p className="mt-2 text-xs leading-relaxed text-[#55594f] sm:text-sm">
+          <p className="mt-2 text-sm leading-relaxed text-[#33362d] sm:text-base">
             Calculate exact unit purchase price for commercial retail shops and showrooms for sale at Sector 25, Hisar.
           </p>
 
@@ -125,7 +125,7 @@ const RateCalculator = ({ onOpenEnquiry }) => {
               <p className="font-cinzel mt-1 text-3xl font-extrabold text-[#e6d5b8] sm:text-4xl">
                 {formatINR(totalCost)}
               </p>
-              <p className="mt-1 text-[10px] text-white/40">*Exclusive of PLC, GST & registration charges</p>
+              <p className="mt-1.5 text-xs text-white/70">*Exclusive of PLC, GST & registration charges</p>
             </div>
           </div>
 

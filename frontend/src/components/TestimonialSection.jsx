@@ -16,7 +16,7 @@ const TestimonialSection = () => {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/testimonials`);
+      const res = await fetch(`${API_URL}/api/testimonials`);
       const data = await res.json();
       if (res.ok && data.success) {
         setTestimonials(data.data || []);
@@ -48,7 +48,7 @@ const TestimonialSection = () => {
             <span className="gold-gradient-text">Client Video Reviews.</span>
           </h2>
 
-          <p className="text-xs text-[#55594f] leading-relaxed sm:text-sm">
+          <p className="text-sm text-[#33362d] leading-relaxed sm:text-base">
             Hear directly from commercial buyers, brand lease partners, and NRI investors who have chosen Connaught Place Hisar.
           </p>
         </div>

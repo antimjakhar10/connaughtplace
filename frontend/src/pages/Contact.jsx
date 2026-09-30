@@ -20,7 +20,7 @@ const Contact = ({ onOpenLightbox }) => {
     setErrorMsg("");
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/enquiries`, {
+      const res = await fetch(`${API_URL}/api/enquiries`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -70,7 +70,7 @@ const Contact = ({ onOpenLightbox }) => {
               Let's Discuss <br />
               <span className="gold-gradient-text-light font-display italic">Your Commercial Space.</span>
             </h1>
-            <p className="mt-3 max-w-xl text-xs text-white/70 sm:text-sm">
+            <p className="mt-3 max-w-xl text-sm text-white/85 sm:text-base">
               Connect directly with our official Connaught Place Hisar commercial team.
             </p>
           </div>
@@ -89,7 +89,7 @@ const Contact = ({ onOpenLightbox }) => {
               <h3 className="font-cinzel mt-2 text-3xl font-bold text-white">
                 Commercial Leasing Office
               </h3>
-              <p className="mt-2 text-xs text-white/60">
+              <p className="mt-2 text-sm text-white/80">
                 Reach out for floor availability, brand lease terms, or to schedule a guided site walkthrough.
               </p>
 

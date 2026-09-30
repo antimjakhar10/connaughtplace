@@ -21,7 +21,7 @@ const EnquiryModal = ({ isOpen, onClose, initialType = "Buy Retail Shop" }) => {
     setErrorMsg("");
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/enquiries`, {
+      const res = await fetch(`${API_URL}/api/enquiries`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -85,7 +85,7 @@ const EnquiryModal = ({ isOpen, onClose, initialType = "Buy Retail Shop" }) => {
                 <h3 className="font-cinzel text-2xl font-bold tracking-wide text-white sm:text-3xl">
                   Inquire to Buy Shop / Schedule Site Visit
                 </h3>
-                <p className="mt-1 text-xs text-white/60">
+                <p className="mt-1 text-sm text-white/80">
                   Connect with the official Connaught Place Hisar sales desk.
                 </p>
               </div>

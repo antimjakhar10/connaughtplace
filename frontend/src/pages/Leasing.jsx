@@ -35,7 +35,7 @@ const Leasing = ({ onOpenEnquiry }) => {
               Leasing Rates & <br />
               <span className="gold-gradient-text-light font-display italic">Inventory Pricing.</span>
             </h1>
-            <p className="mt-4 max-w-xl text-xs leading-relaxed text-white/70 sm:text-sm">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
               Official floor-by-floor rate cards for retail shops and independent showroom spaces at Connaught Place Hisar.
             </p>
 
@@ -74,7 +74,7 @@ const Leasing = ({ onOpenEnquiry }) => {
                 Floor-Wise Rates (300–400 sq.ft.)
               </h2>
             </div>
-            <p className="text-xs text-[#777a70]">*Rates subject to PLC and government applicable taxes.</p>
+            <p className="text-sm text-[#55594f]">*Rates subject to PLC and government applicable taxes.</p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -96,7 +96,7 @@ const Leasing = ({ onOpenEnquiry }) => {
                   <span className="font-sans text-xs text-[#777a70] font-normal"> / sq.ft.</span>
                 </p>
 
-                <p className="mt-4 text-xs leading-relaxed text-[#55594f]">{item.desc}</p>
+                <p className="mt-4 text-sm leading-relaxed text-[#33362d]">{item.desc}</p>
 
                 <div className="mt-6 grid grid-cols-2 gap-2 pt-3 border-t border-black/5">
                   <a

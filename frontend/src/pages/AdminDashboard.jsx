@@ -104,7 +104,7 @@ const AdminDashboard = () => {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/enquiries`, {
+      const res = await fetch(`${API_URL}/api/enquiries`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -133,7 +133,7 @@ const AdminDashboard = () => {
   const fetchGalleryImages = async () => {
     setGalleryLoading(true);
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/gallery`);
+      const res = await fetch(`${API_URL}/api/gallery`);
       const data = await res.json();
       if (res.ok && data.success) {
         setGalleryImages(data.data || []);
@@ -148,7 +148,7 @@ const AdminDashboard = () => {
   const fetchTestimonials = async () => {
     setTestiLoading(true);
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/testimonials`);
+      const res = await fetch(`${API_URL}/api/testimonials`);
       const data = await res.json();
       if (res.ok && data.success) {
         setTestimonials(data.data || []);
@@ -163,7 +163,7 @@ const AdminDashboard = () => {
   const fetchFaqs = async () => {
     setFaqLoading(true);
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/faqs`);
+      const res = await fetch(`${API_URL}/api/faqs`);
       const data = await res.json();
       if (res.ok && data.success) {
         setFaqs(data.data || []);
@@ -178,7 +178,7 @@ const AdminDashboard = () => {
   const handleStatusChange = async (id, newStatus) => {
     setUpdatingId(id);
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/enquiries/${id}`, {
+      const res = await fetch(`${API_URL}/api/enquiries/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -204,7 +204,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this lead?")) return;
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/enquiries/${id}`, {
+      const res = await fetch(`${API_URL}/api/enquiries/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -223,7 +223,7 @@ const AdminDashboard = () => {
     if (!notesModalData) return;
     try {
       const res = await fetch(
-        `${API_URL || "http://localhost:5000"}/api/enquiries/${notesModalData._id}`,
+        `${API_URL}/api/enquiries/${notesModalData._id}`,
         {
           method: "PATCH",
           headers: {
@@ -317,8 +317,8 @@ const AdminDashboard = () => {
     setUploadingImage(true);
     const isEdit = Boolean(editingImageId);
     const url = isEdit
-      ? `${API_URL || "http://localhost:5000"}/api/gallery/${editingImageId}`
-      : `${API_URL || "http://localhost:5000"}/api/gallery`;
+      ? `${API_URL}/api/gallery/${editingImageId}`
+      : `${API_URL}/api/gallery`;
     const method = isEdit ? "PUT" : "POST";
 
     try {
@@ -366,7 +366,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this gallery image?")) return;
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/gallery/${id}`, {
+      const res = await fetch(`${API_URL}/api/gallery/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -405,8 +405,8 @@ const AdminDashboard = () => {
     setSavingTesti(true);
     const isEdit = Boolean(editingTestiId);
     const url = isEdit
-      ? `${API_URL || "http://localhost:5000"}/api/testimonials/${editingTestiId}`
-      : `${API_URL || "http://localhost:5000"}/api/testimonials`;
+      ? `${API_URL}/api/testimonials/${editingTestiId}`
+      : `${API_URL}/api/testimonials`;
     const method = isEdit ? "PUT" : "POST";
 
     try {
@@ -456,7 +456,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this testimonial?")) return;
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/testimonials/${id}`, {
+      const res = await fetch(`${API_URL}/api/testimonials/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -492,8 +492,8 @@ const AdminDashboard = () => {
     setSavingFaq(true);
     const isEdit = Boolean(editingFaqId);
     const url = isEdit
-      ? `${API_URL || "http://localhost:5000"}/api/faqs/${editingFaqId}`
-      : `${API_URL || "http://localhost:5000"}/api/faqs`;
+      ? `${API_URL}/api/faqs/${editingFaqId}`
+      : `${API_URL}/api/faqs`;
     const method = isEdit ? "PUT" : "POST";
 
     try {
@@ -538,7 +538,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this FAQ?")) return;
 
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/faqs/${id}`, {
+      const res = await fetch(`${API_URL}/api/faqs/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

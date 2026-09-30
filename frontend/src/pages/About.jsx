@@ -31,7 +31,7 @@ const About = ({ onOpenEnquiry, onOpenLightbox }) => {
 
   const fetchGallery = async () => {
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/gallery`);
+      const res = await fetch(`${API_URL}/api/gallery`);
       const data = await res.json();
       if (res.ok && data.success && Array.isArray(data.data)) {
         setGalleryImages(data.data);
@@ -66,7 +66,7 @@ const About = ({ onOpenEnquiry, onOpenLightbox }) => {
               A Destination Built <br />
               <span className="gold-gradient-text-light font-display italic">With A Point Of View.</span>
             </h1>
-            <p className="mt-4 max-w-xl text-xs leading-relaxed text-white/70 sm:text-sm">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
               Connaught Place Hisar represents a master-planned 9-acre commercial ecosystem crafted for retail excellence, dining, and brand entertainment.
             </p>
           </div>
@@ -92,7 +92,7 @@ const About = ({ onOpenEnquiry, onOpenLightbox }) => {
                 <span className="gold-gradient-text">One Prime Address.</span>
               </h2>
 
-              <p className="mt-5 text-sm leading-relaxed text-[#55594f] sm:text-base">
+              <p className="mt-5 text-base leading-relaxed text-[#33362d] sm:text-lg">
                 Engineered as Hisar's premier 9-acre open-courtyard commercial ecosystem featuring high-visibility retail shops, anchor showrooms, multiplex dining, and 9-year guaranteed brand lease returns.
               </p>
 

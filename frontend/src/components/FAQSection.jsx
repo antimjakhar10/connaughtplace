@@ -42,7 +42,7 @@ const FAQSection = () => {
   const fetchFaqs = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL || "http://localhost:5000"}/api/faqs`);
+      const res = await fetch(`${API_URL}/api/faqs`);
       const data = await res.json();
       if (res.ok && data.success && data.data && data.data.length > 0) {
         setFaqs(data.data);
@@ -72,7 +72,7 @@ const FAQSection = () => {
         <h3 className="font-cinzel mt-2 text-3xl font-bold text-[#151712] sm:text-4xl">
           Frequently Asked Questions
         </h3>
-        <p className="mt-2 text-xs text-[#55594f]">
+        <p className="mt-2 text-sm text-[#33362d] sm:text-base">
           Everything you need to know about commercial investment at Connaught Place Hisar.
         </p>
       </div>
@@ -111,7 +111,7 @@ const FAQSection = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="border-t border-black/5 px-5 pb-5 pt-3 text-xs leading-relaxed text-[#55594f] sm:text-sm">
+                  <div className="border-t border-black/5 px-5 pb-5 pt-3 text-sm leading-relaxed text-[#33362d] sm:text-base">
                     {faq.answer || faq.a}
                   </div>
                 )}
